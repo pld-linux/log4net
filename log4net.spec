@@ -1,4 +1,5 @@
 Summary:	A .NET framework for logging
+Summary(pl):	Szkielet .NET do logowania
 Name:		log4net
 Version:	1.2.9
 Release:	0.1
@@ -9,14 +10,20 @@ Source0:	http://cvs.apache.org/dist/incubator/log4net/1.2.9/incubating-%{name}-%
 Source1:	%{name}.key
 Source2:	%{name}.pc
 URL:		http://logging.apache.org/log4net/
-BuildRequires:	mono-devel
+BuildRequires:	mono-csharp
 BuildRequires:	unzip
+Conflicts:	pkgconfig < 1:0.19
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 log4net is a tool to help the programmer output log statements to a
 variety of output targets. log4net is a port of the excellent log4j
 framework to the .NET runtime.
+
+%description -l pl
+log4net to narzêdzie pomagaj±ce programi¶cie przekierowywaæ logi na
+ró¿ne wyj¶cia. log4net to port ¶wietnego szkieletu log4j do ¶rodowiska
+uruchomieniowego .NET.
 
 %prep
 %setup -q -c
@@ -235,7 +242,7 @@ mcs -out:log4net.dll \
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/pkgconfig
 cp %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pkgconfig
-gacutil -package log4net -gacdir %{_prefix}/lib -root ${RPM_BUILD_ROOT}%{_prefix}/lib -i log4net.dll > /dev/null
+gacutil -package log4net -gacdir %{_prefix}/lib -root $RPM_BUILD_ROOT%{_prefix}/lib -i log4net.dll > /dev/null
 
 %clean
 rm -rf $RPM_BUILD_ROOT
