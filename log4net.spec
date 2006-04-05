@@ -12,6 +12,9 @@ Source2:	%{name}.pc
 URL:		http://logging.apache.org/log4net/
 BuildRequires:	mono-csharp
 BuildRequires:	unzip
+%if "%(locale -a | grep -q '^en_US\.utf8$' ; echo $?)" == "1"
+BuildRequires:	locale(en_US.utf8)
+%endif
 Conflicts:	pkgconfig < 1:0.19
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
