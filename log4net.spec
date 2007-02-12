@@ -1,5 +1,5 @@
 Summary:	A .NET framework for logging
-Summary(pl):	Szkielet .NET do logowania
+Summary(pl.UTF-8):   Szkielet .NET do logowania
 Name:		log4net
 Version:	1.2.9
 Release:	0.1
@@ -23,9 +23,9 @@ log4net is a tool to help the programmer output log statements to a
 variety of output targets. log4net is a port of the excellent log4j
 framework to the .NET runtime.
 
-%description -l pl
-log4net to narzêdzie pomagaj±ce programi¶cie przekierowywaæ logi na
-ró¿ne wyj¶cia. log4net to port ¶wietnego szkieletu log4j do ¶rodowiska
+%description -l pl.UTF-8
+log4net to narzÄ™dzie pomagajÄ…ce programiÅ›cie przekierowywaÄ‡ logi na
+rÃ³Å¼ne wyjÅ›cia. log4net to port Å›wietnego szkieletu log4j do Å›rodowiska
 uruchomieniowego .NET.
 
 %prep
