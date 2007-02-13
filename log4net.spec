@@ -1,5 +1,5 @@
 Summary:	A .NET framework for logging
-Summary(pl.UTF-8):   Szkielet .NET do logowania
+Summary(pl.UTF-8):	Szkielet .NET do logowania
 Name:		log4net
 Version:	1.2.9
 Release:	0.1
