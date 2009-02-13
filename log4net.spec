@@ -2,7 +2,7 @@ Summary:	A .NET framework for logging
 Summary(pl.UTF-8):	Szkielet .NET do logowania
 Name:		log4net
 Version:	1.2.9
-Release:	0.1
+Release:	1
 License:	Apache
 Group:		Libraries
 Source0:	http://cvs.apache.org/dist/incubator/log4net/1.2.9/incubating-%{name}-%{version}-beta.zip
